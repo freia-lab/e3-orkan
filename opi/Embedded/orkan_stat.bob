@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>orkan_stat</name>
+  <width>400</width>
+  <height>300</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Current Status</text>
+    <x>11</x>
+    <width>162</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Global status</text>
+    <x>12</x>
+    <y>35</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(D)GlobStat</pv_name>
+    <x>122</x>
+    <y>35</y>
+    <width>187</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(D)GlobStat.RVAL</pv_name>
+    <x>322</x>
+    <y>35</y>
+    <width>50</width>
+  </widget>
+</display>

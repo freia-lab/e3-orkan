@@ -1,0 +1,56 @@
+# STATUS
+
+record(mbbi, "$(P)$(D)GlobStat") {
+    field(DESC,"Global status")
+    field(DTYP,"asynUInt32Digital")
+    field(INP,"@asynMask($(PORT_STAT) 0 0xFFFF)UINT16")
+    field(SCAN,"I/O Intr")
+    field(ZRVL, "0")
+    field(ZRST, "Error")
+    field(ZRSV, "MAJOR")
+    field(ONVL, "1")
+    field(ONST, "Initialization")
+    field(ONSV, "NO_ALARM")
+    field(TWVL, "2")
+    field(TWST, "Start inhibit")
+    field(TWSV, "MINOR")
+    field(THVL, "3")
+    field(THST, "Ready to start")
+    field(THSV, "NO_ALARM")
+    field(FRVL, "4")
+    field(FRST, "Obstruction of operation")
+    field(FRSV, "MAJOR")
+    field(FVVL, "5")
+    field(FVST, "Stanby")
+    field(FVSV, "MINOR")
+    field(SXVL, "6")
+    field(SXST, "Start-up Relief")
+    field(SXSV, "MINOR")
+    field(SVVL, "7")
+    field(SVST, "Starts")
+    field(SVSV, "NO_ALARM")
+    field(EIVL, "8")
+    field(EIST, "Load delay")
+    field(EISV, "NO_ALARM")
+    field(NIVL, "9")
+    field(NIST, "Running")
+    field(NISV, "NO_ALARM")
+    field(TEVL, "10")
+    field(TEST, "Reload delay")
+    field(TESV, "NO_ALARM")
+    field(ELVL, "11")
+    field(ELST, "Offload")
+    field(ELSV, "MINOR")
+    field(TVVL, "12")
+    field(TVST, "Stopped")
+    field(TVSV, "MINOR")
+    field(TTVL, "13")
+    field(TTST, "Drainage")
+    field(TTSV, "MINOR")
+}
+
+
+#PARAMETER
+
+
+

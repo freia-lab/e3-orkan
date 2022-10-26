@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Dcbreaker embed</name>
+  <width>1240</width>
+  <height>919</height>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <PV_NAME>$(P)$(D)IcontTot:sSetV</PV_NAME>
+    </macros>
+    <x>11</x>
+    <y>77</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_26</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_4</name>
+    <macros>
+      <PV_NAME>$(P)$(D)OvldFactor:sSetV</PV_NAME>
+    </macros>
+    <x>11</x>
+    <y>107</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_31</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_32</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_7</name>
+    <macros>
+      <PV_NAME>$(P)$(D)OvldTime:sSetV</PV_NAME>
+    </macros>
+    <x>11</x>
+    <y>137</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_39</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_40</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_8</name>
+    <macros>
+      <PV_NAME>$(P)$(D)Ipeak:sSetV</PV_NAME>
+    </macros>
+    <x>11</x>
+    <y>167</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_41</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_42</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_11</name>
+    <macros>
+      <PV_NAME>$(P)$(D)I-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>77</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_47</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_48</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_12</name>
+    <macros>
+      <PV_NAME>$(P)$(D)I-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>107</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_49</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_50</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_13</name>
+    <macros>
+      <PV_NAME>$(P)$(D)Itot</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>137</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_51</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_52</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_14</name>
+    <macros>
+      <PV_NAME>$(P)$(D)OvldT</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>167</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_53</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_54</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_15</name>
+    <macros>
+      <PV_NAME>$(P)$(D)PT01</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>197</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_55</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_56</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_16</name>
+    <macros>
+      <PV_NAME>$(P)$(D)PT02</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>227</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_57</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_58</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_17</name>
+    <macros>
+      <PV_NAME>$(P)$(D)PTdiff</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>257</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_59</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_60</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_18</name>
+    <macros>
+      <PV_NAME>$(P)$(D)OverP</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>287</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_61</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_62</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_19</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT100</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>317</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_63</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_64</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_20</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT200</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>347</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_65</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_66</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_21</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT00diff</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>377</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_67</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_68</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_22</name>
+    <macros>
+      <PV_NAME>$(P)$(D)PyrofuseRdy</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>407</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_69</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_70</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_23</name>
+    <macros>
+      <PV_NAME>$(P)$(D)PyrofuseOK</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>437</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_71</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_72</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_24</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT101</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>467</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_73</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_74</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_25</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT201</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>497</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_75</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_76</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_26</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT01diff</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>527</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_77</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_78</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_27</name>
+    <macros>
+      <PV_NAME>$(P)$(D)TT003</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>557</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_79</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_80</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_28</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V1ce-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>587</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_81</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_82</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_29</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V1f-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>617</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_83</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_84</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_30</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V2ce-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>646</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_85</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_86</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_31</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V2f-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>673</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_87</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_88</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_32</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V3-1</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>700</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_89</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_90</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_33</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V1ce-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>726</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_91</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_92</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_34</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V1f-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>755</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_93</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_94</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_35</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V2ce-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>783</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_95</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_96</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_36</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V2f-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>811</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_97</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_98</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_37</name>
+    <macros>
+      <PV_NAME>$(P)$(D)V3-2</PV_NAME>
+    </macros>
+    <x>421</x>
+    <y>838</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_99</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_100</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>DCBreaker: $(P)$(D)</text>
+    <x>11</x>
+    <width>390</width>
+    <height>48</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Parameter</text>
+    <x>11</x>
+    <y>42</y>
+    <width>120</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Current Reading</text>
+    <x>421</x>
+    <y>42</y>
+    <width>162</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>System info</text>
+    <x>844</x>
+    <y>377</y>
+    <width>162</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_39</name>
+    <macros>
+      <PV_NAME>$(P)$(D)SerialNum</PV_NAME>
+    </macros>
+    <x>844</x>
+    <y>427</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_43</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_44</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_40</name>
+    <macros>
+      <PV_NAME>$(P)$(D)SoftwVer</PV_NAME>
+    </macros>
+    <x>844</x>
+    <y>453</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_45</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_46</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_41</name>
+    <macros>
+      <PV_NAME>$(P)$(D)FPGAVer</PV_NAME>
+    </macros>
+    <x>844</x>
+    <y>479</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_101</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_102</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_42</name>
+    <macros>
+      <PV_NAME>$(P)$(D)DevTyp</PV_NAME>
+    </macros>
+    <x>844</x>
+    <y>506</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_103</name>
+      <pv_name>$(PV_NAME).DESC</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_104</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>dcbreaker_stat.bob</file>
+    <x>843</x>
+    <y>42</y>
+    <resize>2</resize>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions execute_as_one="true">
+      <action type="open_webpage">
+        <url>http://$(URL)</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text>Open Web Interface...</text>
+    <x>844</x>
+    <y>579</y>
+    <width>210</width>
+    <tooltip>Gives full controll over the instrument.
+Password protected.</tooltip>
+  </widget>
+</display>

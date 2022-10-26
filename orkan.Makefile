@@ -31,10 +31,15 @@ ARCH_FILTER += linux-x86_64
 #
 # with $(ASYN_DEP_VERSION) defined in `configure/CONFIG_MODULE`
 
+REQUIRED += modbus
+ifneq ($(strip $(MODBUS_DEP_VERSION)),)
+  modbus_VERSION=$(MODBUS_DEP_VERSION)
+endif
+
 # Since this file (orkan.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
 # to that path
-APP := orkanApp
+APP := .
 APPDB := $(APP)/Db
 APPSRC := $(APP)/src
 

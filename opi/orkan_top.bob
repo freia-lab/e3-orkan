@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>orkan_top</name>
+  <width>1250</width>
+  <height>980</height>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Sauer-Orkan</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <macros>
+              <D>Compr:</D>
+              <P>Cryo-Rec:LP:</P>
+            </macros>
+            <file>Embedded/orkan_stat.bob</file>
+            <y>3</y>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Debug</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>Embedded/debug.bob</file>
+            <y>3</y>
+            <width>1240</width>
+            <height>919</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <width>1230</width>
+    <height>960</height>
+  </widget>
+</display>
