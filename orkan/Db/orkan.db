@@ -3,7 +3,7 @@
 record(mbbi, "$(P)$(D)GlobStat") {
     field(DESC,"Global status")
     field(DTYP,"asynUInt32Digital")
-    field(INP,"@asynMask($(PORT_STAT) 0 0xFFFF)UINT16")
+    field(INP,"@asynMask($(PORT_STAT) 0 0xFF)UINT16")
     field(SCAN,"I/O Intr")
     field(ZRVL, "0")
     field(ZRST, "Error")

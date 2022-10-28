@@ -20,7 +20,7 @@
 #-asynSetOption("portName", addr,
 #-		"key", "value")
 
-drvAsynSerialPortConfigure("$(ASYN_PORT_NAME)","$(SERIAL_PORT)",0,0,1)
+drvAsynSerialPortConfigure("$(ASYN_PORT_NAME)","$(SERIAL_PORT)",0,0,0)
 asynSetOption("$(ASYN_PORT_NAME)",0,"baud", $(BAUD=9600))
 asynSetOption("$(ASYN_PORT_NAME)",0,"bits", "8")
 asynSetOption("$(ASYN_PORT_NAME)",0,"parity", "none")
@@ -44,7 +44,7 @@ modbusInterposeConfig("$(ASYN_PORT_NAME)",1,2000,4)
 #			 'Poll time (msec)' 
 #			 'PLC type'
 
-drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x2623, 1, "UINT16", 2000, "orkan")
+drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x2623, 1, "UINT16", 4000, "orkan")
 #drvModbusAsynConfigure($(ASYN_PORT_NAME)_DATA_PARAM, "$(ASYN_PORT_NAME)", 2, 3, 16, 4, "INT16", 2000, "orkan")
 
 #Load your database defining the EPICS records
