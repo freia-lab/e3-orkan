@@ -3,8 +3,8 @@
 record(mbbi, "$(P)$(D)GlobStat") {
     field(DESC,"Global status")
     field(DTYP,"asynUInt32Digital")
-    field(INP,"@asynMask($(PORT_STAT) 0 0xFF)UINT16")
-    field(SCAN,"I/O Intr")
+    field(INP,"@asynMask($(PORT_RD_1R) 0x2623 0xFF 1500)UINT16")
+    field(SCAN,"1 second")
     field(ZRVL, "0")
     field(ZRST, "Error")
     field(ZRSV, "MAJOR")
@@ -25,7 +25,7 @@ record(mbbi, "$(P)$(D)GlobStat") {
     field(FVSV, "MINOR")
     field(SXVL, "6")
     field(SXST, "Start-up Relief")
-    field(SXSV, "MINOR")
+    field(SXSV, "NO_ALARM")
     field(SVVL, "7")
     field(SVST, "Starts")
     field(SVSV, "NO_ALARM")
@@ -49,6 +49,13 @@ record(mbbi, "$(P)$(D)GlobStat") {
     field(TTSV, "MINOR")
 }
 
+
+record (longin, "$(P)$(D)HrsUntilSvc") {
+    field(DTYP,"asynUInt32Digital")
+    field(INP,"@asynMask($(PORT_RD_2R) 0x1000 0xFFFF 1500)UINT16")
+#    field(SCAN,"I/O Intr")
+    field(SCAN,"1 second")
+}
 
 #PARAMETER
 

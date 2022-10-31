@@ -26,13 +26,12 @@ asynSetOption("$(ASYN_PORT_NAME)",0,"bits", "8")
 asynSetOption("$(ASYN_PORT_NAME)",0,"parity", "none")
 asynSetOption("$(ASYN_PORT_NAME)",0,"stop", "1")
 		
-		
 #modbusInterposeConfig(portName, 
 #                      linkType,
 #                      timeoutMsec,
 #                      writeDelayMsec)
 
-modbusInterposeConfig("$(ASYN_PORT_NAME)",1,2000,4)
+modbusInterposeConfig("$(ASYN_PORT_NAME)",1,500,100)
 
 #drvModbusAsynConfigure	 'Port name'
 #			 'Octet port name' 
@@ -44,10 +43,24 @@ modbusInterposeConfig("$(ASYN_PORT_NAME)",1,2000,4)
 #			 'Poll time (msec)' 
 #			 'PLC type'
 
-drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x2623, 1, "UINT16", 4000, "orkan")
-#drvModbusAsynConfigure($(ASYN_PORT_NAME)_DATA_PARAM, "$(ASYN_PORT_NAME)", 2, 3, 16, 4, "INT16", 2000, "orkan")
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x2623, 1, "UINT16", 4000, "orkan")
+
+drvModbusAsynConfigure($(ASYN_PORT_NAME)_RD_1R, "$(ASYN_PORT_NAME)", 2, 3, -1, 1, "UINT16", 4000, "orkan")
+drvModbusAsynConfigure($(ASYN_PORT_NAME)_RD_2R, "$(ASYN_PORT_NAME)", 2, 3, -1, 2, "UINT16", 4000, "orkan")
+
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_PRESSURE, "$(ASYN_PORT_NAME)", 2, 3, 0x1028, 104, "UINT16", 4000, "orkan")
+
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_TEMP1, "$(ASYN_PORT_NAME)", 2, 3, 0x1400, 123, "UINT16", 4000, "orkan")
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_TEMP2, "$(ASYN_PORT_NAME)", 2, 3, 0x14FA, 124, "UINT16", 4000, "orkan")
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_TEMP3, "$(ASYN_PORT_NAME)", 2, 3, 0x15F6, 26, "UINT16", 4000, "orkan")
+
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_MOTOR, "$(ASYN_PORT_NAME)", 2, 3, 0x1800, 24, "UINT16", 4000, "orkan")
+
 
 #Load your database defining the EPICS records
-dbLoadRecords("orkan.db", "PORT_STAT=$(ASYN_PORT_NAME)_STATUS,PORT_PARAM=$(ASYN_PORT_NAME)_DATA_PARAM,P=$(PREFIX),D=$(DEV_NAME)")
+dbLoadRecords("orkan.db", "PORT_RD_2R=$(ASYN_PORT_NAME)_RD_2R,PORT_RD_1R=$(ASYN_PORT_NAME)_RD_1R,P=$(PREFIX),D=$(DEV_NAME)")
 
 dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT='$(ASYN_PORT_NAME)',ADDR='0',IMAX='1024',OMAX='256'")
+
+asynSetTraceIOMask "$(ASYN_PORT_NAME)",0,4   # Enable traceIOHex
+#asynSetTraceMask "$(ASYN_PORT_NAME)",0,9     # Enable traceError and traceIODriver
