@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ai</name>
+  <width>400</width>
+  <height>25</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(D)$(S).DESC</pv_name>
+    <x>50</x>
+    <width>160</width>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(D)$(S)</pv_name>
+    <x>210</x>
+    <width>80</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):</text>
+    <width>80</width>
+  </widget>
+</display>

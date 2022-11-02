@@ -55,7 +55,6 @@
       <width>110</width>
       <items>
         <item>PORT1</item>
-        <item>PORT2</item>
       </items>
     </widget>
     <widget type="label" version="2.0.0">
@@ -63,6 +62,85 @@
       <text>Asyn Port:</text>
       <x>59</x>
       <y>12</y>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>RS485 port</name>
+    <macros>
+      <D>Compr:</D>
+      <P>Cryo-Rec:LP:</P>
+      <S>RS485</S>
+    </macros>
+    <x>500</x>
+    <y>160</y>
+    <width>330</width>
+    <height>170</height>
+    <style>1</style>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label_142</name>
+      <text>Baud rate:</text>
+      <x>19</x>
+      <y>12</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_143</name>
+      <text>Data bits:</text>
+      <x>19</x>
+      <y>42</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_144</name>
+      <text>Parity:</text>
+      <x>19</x>
+      <y>72</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_145</name>
+      <text>Stop bits:</text>
+      <x>19</x>
+      <y>102</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P)$(D)s$(S)-baud</pv_name>
+      <x>139</x>
+      <y>12</y>
+      <width>60</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P)$(D)s$(S)-datab</pv_name>
+      <x>139</x>
+      <y>42</y>
+      <width>60</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P)$(D)s$(S)-parity</pv_name>
+      <x>139</x>
+      <y>72</y>
+      <width>60</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)$(D)s$(S)-stopb</pv_name>
+      <x>139</x>
+      <y>102</y>
+      <width>60</width>
     </widget>
   </widget>
 </display>
