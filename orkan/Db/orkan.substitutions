@@ -2,3 +2,26 @@ file "orkan_gen.template" { pattern {}
 {}
 }
 
+file "orkan-ai.template" { pattern
+{S   	           EGU     ADDR	    PORT		SCAN	   DESC}
+{PT002		   atm	   0x1000   "$(PORT_RD_2R)"     "5 second" "Feed pressure"}
+{PT003		   atm	   0x1012   "$(PORT_RD_2R)"     "5 second" "Suction pressure"}
+{PT110		   atm	   0x1028   "$(PORT_RD_2R)"     "5 second" "Stage 1 pressure"}
+{PT210		   atm	   0x1036   "$(PORT_RD_2R)"     "5 second" "Stage 2 pressure"}
+{PT310		   atm	   0x1044   "$(PORT_RD_2R)"     "5 second" "Stage 3 pressure"}
+{PT410		   atm	   0x1052   "$(PORT_RD_2R)"     "5 second" "Stage 4 pressure"}
+{PT510		   atm	   0x1060   "$(PORT_RD_2R)"     "5 second" "Stage 5 pressure"}
+{PT709		   atm	   0x107C   "$(PORT_RD_2R)"     "5 second" "System pressure"}
+{PT800		   atm	   0x10D2   "$(PORT_RD_2R)"     "5 second" "Oil pressure"}
+{TT519		   "°C"	   0x1400   "$(PORT_RD_2R)"     "5 second" "Outlet temperature"}
+{TT111		   "°C"	   0x14B4   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage1 cooler"}
+{TT211		   "°C"	   0x14FA   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage2 cooler"}
+{TT311		   "°C"	   0x1524   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage3 cooler"}
+{TT411		   "°C"	   0x1540   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage4 cooler"}
+{TT511		   "°C"	   0x154E   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage5 cooler"}
+{TT511		   "°C"	   0x154E   "$(PORT_RD_2R)"     "5 second" "Temp. b4 stage5 cooler"}
+{MTR-I	   	   "A"	   0x1800   "$(PORT_RD_2R)"     "5 second" "         Motor Current"}
+{MTR-Freq	   "Hz"	   0x1814   "$(PORT_RD_2R)"     "5 second" "         Motor frequency"}
+{MTR-OilLvl	   "?"	   0x1823   "$(PORT_RD_2R)"     "5 second" "         Motor oli level"}
+{TT001-ErrLvl	   ""	   0x10f8   "$(PORT_RD_1R)" 	"10 second" "Error level"}
+}

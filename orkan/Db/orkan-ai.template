@@ -1,0 +1,9 @@
+record (ai, "$(P)$(D)$(S)") {
+    field(DESC, "$(DESC)")
+    field(DTYP,"asynInt32")
+    field(INP,"@asynMask($(PORT) $(ADDR) 0xFFFF 1500)UINT16")
+    field(ASLO, "0.01")
+    field(PREC, "2")
+    field(EGU, "$(EGU)")
+    field(SCAN,"$(SCAN)")
+}

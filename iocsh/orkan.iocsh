@@ -43,7 +43,7 @@ modbusInterposeConfig("$(ASYN_PORT_NAME)",1,500,100)
 #			 'Poll time (msec)' 
 #			 'PLC type'
 
-#drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x2623, 1, "UINT16", 4000, "orkan")
+#drvModbusAsynConfigure($(ASYN_PORT_NAME)_STATUS, "$(ASYN_PORT_NAME)", 2, 3, 0x247A, 16, "UINT16", 4000, "orkan")
 
 drvModbusAsynConfigure($(ASYN_PORT_NAME)_RD_1R, "$(ASYN_PORT_NAME)", 2, 3, -1, 1, "UINT16", 4000, "orkan")
 drvModbusAsynConfigure($(ASYN_PORT_NAME)_RD_2R, "$(ASYN_PORT_NAME)", 2, 3, -1, 2, "UINT16", 4000, "orkan")
