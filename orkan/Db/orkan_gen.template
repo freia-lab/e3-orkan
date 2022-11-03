@@ -133,7 +133,7 @@ record (longin, "$(P)$(D)TEST_W-sData") {
 }
 record (longout, "$(P)$(D)TEST_W-cData") {
     field(DTYP,"asynInt32")
-    field(OUT,"@asynMask($(PORT_WR_1R) 0x2401 600)UINT16")
+    field(OUT,"@asynMask($(PORT_WR_1R) 0x246E 600)UINT16")
 }
 
 #PARAMETER
