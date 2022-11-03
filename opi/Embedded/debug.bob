@@ -143,4 +143,116 @@
       <width>60</width>
     </widget>
   </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <D>Compr:</D>
+      <P>Cryo-Rec:LP:</P>
+      <S>TEST_W</S>
+    </macros>
+    <x>510</x>
+    <y>350</y>
+    <width>370</width>
+    <height>60</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>$(S)</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)$(D)$(S)-sData</pv_name>
+      <x>80</x>
+      <width>40</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(P)$(D)$(S)-cData</pv_name>
+      <x>140</x>
+      <width>40</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>INP:</text>
+      <y>20</y>
+      <width>50</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>OUT:</text>
+      <y>40</y>
+      <width>50</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P)$(D)$(S)-cData.OUT</pv_name>
+      <x>50</x>
+      <y>40</y>
+      <width>310</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P)$(D)$(S)-sData.INP</pv_name>
+      <x>50</x>
+      <y>20</y>
+      <width>310</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <macros>
+      <D>Compr:</D>
+      <P>Cryo-Rec:LP:</P>
+      <S>TEST_B</S>
+    </macros>
+    <x>510</x>
+    <y>450</y>
+    <width>370</width>
+    <height>60</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>$(S)</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P)$(D)$(S)-sData</pv_name>
+      <x>80</x>
+      <width>40</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <pv_name>$(P)$(D)$(S)-cData</pv_name>
+      <x>140</x>
+      <width>40</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>INP:</text>
+      <y>20</y>
+      <width>50</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>OUT:</text>
+      <y>40</y>
+      <width>50</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P)$(D)$(S)-cData.OUT</pv_name>
+      <x>50</x>
+      <y>40</y>
+      <width>310</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(P)$(D)$(S)-sData.INP</pv_name>
+      <x>50</x>
+      <y>20</y>
+      <width>310</width>
+    </widget>
+  </widget>
 </display>

@@ -342,4 +342,11 @@
     <y>50</y>
     <width>50</width>
   </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(D)cRemStart</pv_name>
+    <x>590</x>
+    <y>30</y>
+    <width>40</width>
+  </widget>
 </display>
