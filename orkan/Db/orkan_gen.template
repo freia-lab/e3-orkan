@@ -4,7 +4,7 @@ record(mbbi, "$(P)$(D)GlobStat") {
     field(DESC,"Global status")
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x2623 0xFF 1500)UINT16")
-    field(SCAN,"1 second")
+    field(SCAN,"2 second")
     field(ZRVL, "0")
     field(ZRST, "Error")
     field(ZRSV, "MAJOR")
@@ -58,47 +58,82 @@ record (longin, "$(P)$(D)sOpMode") {
 record (longin, "$(P)$(D)sRemStart") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x2401 0xFF 1500)UINT16")
-    field(SCAN,"2 second")
+    field(SCAN,"5 second")
+}
+
+record (longout, "$(P)$(D)cRemStart") {
+    field(DTYP,"asynInt32")
+    field(OUT,"@asynMask($(PORT_WR_1R) 0x2401 0xFF 500)UINT16")
 }
 
 record (longin, "$(P)$(D)sStartByPilot") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x2402 0xFF 1500)UINT16")
-    field(SCAN,"2 second")
+    field(SCAN,"10 second")
 }
+
+# RS485 Port settings
 
 record (longin, "$(P)$(D)sRS485-baud") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_2R) 0x24ae 0xFFFF 1500)UINT16")
     field(PINI, "YES")
+    field(FLNK, "$(P)$(D)sRS485-busAddr")
+}
+record (longin, "$(P)$(D)sRS485-busAddr") {
+    field(DTYP,"asynUInt32Digital")
+    field(INP,"@asynMask($(PORT_RD_1R) 0x24ad 0xFF 1500)UINT16")
+    field(FLNK, "$(P)$(D)sRS485-parity")
 }
 record (longin, "$(P)$(D)sRS485-parity") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x24b0 0xFF 1500)UINT16")
-    field(PINI, "YES")
+    field(FLNK, "$(P)$(D)sRS485-datab")
 }
 record (longin, "$(P)$(D)sRS485-datab") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x24b1 0xFF 1500)UINT16")
-    field(PINI, "YES")
+    field(FLNK, "$(P)$(D)sRS485-stopb")
 }
 record (longin, "$(P)$(D)sRS485-stopb") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x24b2 0xFF 1500)UINT16")
-    field(PINI, "YES")
 }
+
+
+# DEBUG
 
 record (longin, "$(P)$(D)TEST") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_2R) 0x2604 0xFFFF 1500)UINT16")
 #    field(SCAN,"I/O Intr")
-    field(SCAN,"1 second")
+#    field(SCAN,"1 second")
 }
 record (longin, "$(P)$(D)TEST-byte") {
     field(DTYP,"asynUInt32Digital")
     field(INP,"@asynMask($(PORT_RD_1R) 0x24ba 0xFF 1500)UINT16")
 #    field(SCAN,"I/O Intr")
-    field(SCAN,"1 second")
+#    field(SCAN,"1 second")
+}
+
+record (longin, "$(P)$(D)TEST_B-sData") {
+    field(DTYP,"asynUInt32Digital")
+    field(INP,"@asynMask($(PORT_RD_1R) 0x246A 0xFF 1500)UINT16")
+    field(SCAN,"10 second")
+}
+record (longout, "$(P)$(D)TEST_B-cData") {
+    field(DTYP,"asynInt32")
+    field(OUT,"@asynMask($(PORT_WR_1R) 0x246A 600)UINT16")
+}
+
+record (longin, "$(P)$(D)TEST_W-sData") {
+    field(DTYP,"asynUInt32Digital")
+    field(INP,"@asynMask($(PORT_RD_2R) 0x246e 0xFFFF 1500)UINT16")
+    field(SCAN,"10 second")
+}
+record (longout, "$(P)$(D)TEST_W-cData") {
+    field(DTYP,"asynInt32")
+    field(OUT,"@asynMask($(PORT_WR_1R) 0x2401 600)UINT16")
 }
 
 #PARAMETER
