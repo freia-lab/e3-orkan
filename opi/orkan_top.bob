@@ -5,6 +5,10 @@
   <height>980</height>
   <widget type="tabs" version="2.0.0">
     <name>Tabs</name>
+    <macros>
+      <D>C4:</D>
+      <P>Cryo-Rec:LP:</P>
+    </macros>
     <tabs>
       <tab>
         <name>Sauer-Orkan</name>
@@ -12,11 +16,13 @@
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_1</name>
             <macros>
-              <D>Compr:</D>
+              <D>C4:</D>
               <P>Cryo-Rec:LP:</P>
             </macros>
             <file>Embedded/orkan_stat.bob</file>
             <y>3</y>
+            <width>1200</width>
+            <height>600</height>
             <resize>2</resize>
           </widget>
         </children>
