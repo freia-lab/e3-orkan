@@ -25,3 +25,4 @@ file "orkan-ai.template" { pattern
 {MTR-OilLvl	   "?"	   0x1823   "$(PORT_RD_2R)"     "5 second" "         Motor oli level"}
 {TT001-ErrLvl	   ""	   0x10f8   "$(PORT_RD_1R)" 	"10 second" "Error level"}
 }
+ 
