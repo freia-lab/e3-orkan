@@ -39,7 +39,7 @@ endif
 # Since this file (orkan.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
 # to that path
-APP := .
+APP := orkanApp
 APPDB := $(APP)/Db
 APPSRC := $(APP)/src
 
