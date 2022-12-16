@@ -7,25 +7,26 @@
     <name>Text Update</name>
     <pv_name>$(P)$(D)$(S).DESC</pv_name>
     <x>50</x>
-    <width>160</width>
+    <width>175</width>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
     <tooltip>$(pv_name)</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
     <pv_name>$(P)$(D)$(S)</pv_name>
-    <x>210</x>
-    <width>80</width>
+    <x>230</x>
+    <width>70</width>
     <horizontal_alignment>2</horizontal_alignment>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>$(S):</text>
-    <width>80</width>
+    <width>110</width>
   </widget>
 </display>
