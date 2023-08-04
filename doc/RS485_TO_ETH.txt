@@ -1,0 +1,5 @@
+The documentation on the RS485 to ethernet converter (Modbus TCP to Modbus RTU gateway) is on https://www.waveshare.com/wiki/RS485_TO_ETH_(B)
+
+NOTE: Reset to the factory settings sets the IP address to 192.168.1.254 (not to 92.168.1.200 as stated in the documentation).
+
+
