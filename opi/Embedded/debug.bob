@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-14 09:12:58 by konrad-->
 <display version="2.0.0">
   <name>Debug</name>
   <macros>
@@ -17,7 +18,7 @@
     <width>350</width>
     <height>120</height>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Asyn Record</name>
     <macros>
       <P>ioc01-orkan:</P>
@@ -32,9 +33,13 @@
       </font>
     </font>
     <foreground_color>
-      <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+      <color name="Read_Background" red="230" green="235" blue="232">
       </color>
     </foreground_color>
+    <line_color>
+      <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+      </color>
+    </line_color>
     <background_color>
       <color name="Read_Background" red="230" green="235" blue="232">
       </color>
@@ -64,218 +69,6 @@
       <text>Asyn Port:</text>
       <x>59</x>
       <y>12</y>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>RS485 port</name>
-    <macros>
-      <S>RS485</S>
-    </macros>
-    <x>500</x>
-    <y>160</y>
-    <width>330</width>
-    <style>1</style>
-    <font>
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Read_Background" red="230" green="235" blue="232">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label_142</name>
-      <text>Baud rate:</text>
-      <x>19</x>
-      <y>12</y>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_143</name>
-      <text>Data bits:</text>
-      <x>19</x>
-      <y>42</y>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_144</name>
-      <text>Parity:</text>
-      <x>19</x>
-      <y>72</y>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_145</name>
-      <text>Stop bits:</text>
-      <x>19</x>
-      <y>102</y>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update</name>
-      <pv_name>$(P)$(D)s$(S)-baud</pv_name>
-      <x>139</x>
-      <y>12</y>
-      <width>60</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_1</name>
-      <pv_name>$(P)$(D)s$(S)-datab</pv_name>
-      <x>139</x>
-      <y>42</y>
-      <width>60</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>$(P)$(D)s$(S)-parity</pv_name>
-      <x>139</x>
-      <y>72</y>
-      <width>60</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>$(P)$(D)s$(S)-stopb</pv_name>
-      <x>139</x>
-      <y>102</y>
-      <width>60</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_146</name>
-      <text>Bus address:</text>
-      <x>19</x>
-      <y>132</y>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_12</name>
-      <pv_name>$(P)$(D)s$(S)-busAddr</pv_name>
-      <x>139</x>
-      <y>132</y>
-      <width>60</width>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name).PROC</pv_name>
-          <value>1</value>
-          <description>Update</description>
-        </action>
-      </actions>
-      <pv_name>$(P)$(D)s$(S)-baud</pv_name>
-      <x>239</x>
-      <y>12</y>
-      <width>80</width>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <macros>
-      <S>TEST_W</S>
-    </macros>
-    <x>510</x>
-    <y>400</y>
-    <width>370</width>
-    <height>60</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>$(S)</text>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_4</name>
-      <pv_name>$(P)$(D)$(S)-sData</pv_name>
-      <x>80</x>
-      <width>40</width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Entry</name>
-      <pv_name>$(P)$(D)$(S)-cData</pv_name>
-      <x>140</x>
-      <width>40</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_3</name>
-      <text>INP:</text>
-      <y>20</y>
-      <width>50</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_4</name>
-      <text>OUT:</text>
-      <y>40</y>
-      <width>50</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_8</name>
-      <pv_name>$(P)$(D)$(S)-cData.OUT</pv_name>
-      <x>50</x>
-      <y>40</y>
-      <width>310</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_7</name>
-      <pv_name>$(P)$(D)$(S)-sData.INP</pv_name>
-      <x>50</x>
-      <y>20</y>
-      <width>310</width>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group_3</name>
-    <macros>
-      <S>TEST_B</S>
-    </macros>
-    <x>510</x>
-    <y>490</y>
-    <width>370</width>
-    <height>60</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_5</name>
-      <text>$(S)</text>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_9</name>
-      <pv_name>$(P)$(D)$(S)-sData</pv_name>
-      <x>80</x>
-      <width>40</width>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Entry_3</name>
-      <pv_name>$(P)$(D)$(S)-cData</pv_name>
-      <x>140</x>
-      <width>40</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_6</name>
-      <text>INP:</text>
-      <y>20</y>
-      <width>50</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_7</name>
-      <text>OUT:</text>
-      <y>40</y>
-      <width>50</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_10</name>
-      <pv_name>$(P)$(D)$(S)-cData.OUT</pv_name>
-      <x>50</x>
-      <y>40</y>
-      <width>310</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_11</name>
-      <pv_name>$(P)$(D)$(S)-sData.INP</pv_name>
-      <x>50</x>
-      <y>20</y>
-      <width>310</width>
     </widget>
   </widget>
 </display>

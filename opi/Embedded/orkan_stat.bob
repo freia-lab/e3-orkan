@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-14 09:18:45 by konrad-->
 <display version="2.0.0">
   <name>orkan_stat</name>
   <width>1200</width>
@@ -35,75 +36,6 @@
     <y>35</y>
     <width>50</width>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <macros>
-      <L>TEST</L>
-      <S>TEST</S>
-    </macros>
-    <x>12</x>
-    <y>290</y>
-    <width>658</width>
-    <height>50</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_9</name>
-      <text>$(L) (word)</text>
-      <width>110</width>
-      <height>17</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>$(P)$(D)$(S)</pv_name>
-      <x>110</x>
-      <width>78</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>$(P)$(D)$(S)-byte</pv_name>
-      <x>110</x>
-      <y>30</y>
-      <width>50</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_10</name>
-      <text>$(L) (byte)</text>
-      <y>30</y>
-      <width>110</width>
-      <height>17</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_4</name>
-      <pv_name>$(P)$(D)$(S)</pv_name>
-      <x>208</x>
-      <width>78</width>
-      <format>4</format>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_5</name>
-      <pv_name>$(P)$(D)$(S)-byte</pv_name>
-      <x>208</x>
-      <y>30</y>
-      <width>50</width>
-      <format>4</format>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_6</name>
-      <pv_name>$(P)$(D)$(S).INP</pv_name>
-      <x>328</x>
-      <width>330</width>
-      <format>4</format>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_8</name>
-      <pv_name>$(P)$(D)$(S)-byte.INP</pv_name>
-      <x>328</x>
-      <y>30</y>
-      <width>330</width>
-      <format>4</format>
-    </widget>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <macros>
@@ -111,7 +43,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>90</y>
+    <y>235</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -122,7 +54,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>110</y>
+    <y>255</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -133,7 +65,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>130</y>
+    <y>275</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -144,7 +76,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>150</y>
+    <y>295</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -155,7 +87,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>170</y>
+    <y>315</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -166,7 +98,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>190</y>
+    <y>335</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -177,7 +109,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>210</y>
+    <y>355</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -188,7 +120,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>230</y>
+    <y>375</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -199,7 +131,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>250</y>
+    <y>395</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -210,7 +142,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>130</y>
+    <y>235</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -221,7 +153,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>150</y>
+    <y>255</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -232,7 +164,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>170</y>
+    <y>275</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -243,7 +175,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>190</y>
+    <y>295</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -254,7 +186,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>210</y>
+    <y>315</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -265,18 +197,18 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>230</y>
+    <y>335</y>
     <width>390</width>
     <height>25</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_16</name>
     <macros>
-      <S>MTR-Freq</S>
+      <S>MaintInterval</S>
     </macros>
     <file>analog-in.bob</file>
-    <x>730</x>
-    <y>130</y>
+    <x>400</x>
+    <y>100</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -286,19 +218,8 @@
       <S>MTR-I</S>
     </macros>
     <file>analog-in.bob</file>
-    <x>730</x>
+    <x>402</x>
     <y>150</y>
-    <width>390</width>
-    <height>25</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_18</name>
-    <macros>
-      <S>MTR-OilLvl</S>
-    </macros>
-    <file>analog-in.bob</file>
-    <x>730</x>
-    <y>170</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -311,43 +232,23 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
-    <text>Remote start:</text>
+    <text>Local/remote:</text>
     <x>400</x>
     <y>30</y>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_14</name>
-    <text>Start by pilot:</text>
-    <x>400</x>
-    <y>50</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_10</name>
     <pv_name>$(P)$(D)sOpMode</pv_name>
     <x>530</x>
     <y>10</y>
-    <width>50</width>
+    <width>80</width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_11</name>
     <pv_name>$(P)$(D)sRemStart</pv_name>
     <x>530</x>
     <y>30</y>
-    <width>50</width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_12</name>
-    <pv_name>$(P)$(D)sStartByPilot</pv_name>
-    <x>530</x>
-    <y>50</y>
-    <width>50</width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry</name>
-    <pv_name>$(P)$(D)cRemStart</pv_name>
-    <x>590</x>
-    <y>30</y>
-    <width>40</width>
+    <width>80</width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
@@ -373,86 +274,14 @@
     <y>60</y>
     <width>210</width>
   </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_1</name>
-    <pv_name>$(P)$(D)cStartByPilot</pv_name>
-    <x>590</x>
-    <y>50</y>
-    <width>40</width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_2</name>
-    <pv_name>$(P)$(D)cOpMode</pv_name>
-    <x>590</x>
-    <y>10</y>
-    <width>40</width>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_15</name>
-    <text>Compressor start:</text>
-    <x>400</x>
-    <y>80</y>
-    <width>120</width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_13</name>
-    <pv_name>$(P)$(D)sStart</pv_name>
-    <x>530</x>
-    <y>80</y>
-    <width>50</width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_3</name>
-    <pv_name>$(P)$(D)cStart</pv_name>
-    <x>590</x>
-    <y>80</y>
-    <width>40</width>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_17</name>
-    <text>Compressor stop:</text>
-    <x>400</x>
-    <y>100</y>
-    <width>120</width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_15</name>
-    <pv_name>$(P)$(D)sStop</pv_name>
-    <x>530</x>
-    <y>100</y>
-    <width>50</width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry_5</name>
-    <pv_name>$(P)$(D)cStop</pv_name>
-    <x>590</x>
-    <y>100</y>
-    <width>40</width>
-  </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box</name>
-    <pv_name>$(P)$(D)sStart.SCAN</pv_name>
-    <x>660</x>
-    <y>80</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box_1</name>
-    <pv_name>$(P)$(D)sStop.SCAN</pv_name>
-    <x>660</x>
-    <y>100</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_19</name>
     <macros>
       <S>MaintTime</S>
     </macros>
     <file>analog-in.bob</file>
-    <x>730</x>
-    <y>210</y>
+    <x>400</x>
+    <y>60</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -462,41 +291,96 @@
       <S>sOpTime</S>
     </macros>
     <file>analog-in.bob</file>
-    <x>730</x>
-    <y>230</y>
+    <x>400</x>
+    <y>80</y>
     <width>390</width>
     <height>25</height>
   </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box_2</name>
-    <pv_name>$(P)$(D)sOpMode.SCAN</pv_name>
-    <x>640</x>
-    <y>10</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_21</name>
+    <macros>
+      <S>MTR-OilT</S>
+    </macros>
+    <file>analog-in.bob</file>
+    <x>402</x>
+    <y>170</y>
+    <width>390</width>
+    <height>25</height>
   </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box_3</name>
-    <pv_name>$(P)$(D)sStartByPilot.SCAN</pv_name>
-    <x>640</x>
-    <y>50</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box_4</name>
-    <pv_name>$(P)$(D)sRemStart.SCAN</pv_name>
-    <x>640</x>
-    <y>30</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="combo" version="2.0.0">
-    <name>Combo Box_5</name>
-    <pv_name>$(P)$(D)GlobStat.SCAN</pv_name>
-    <x>210</x>
-    <y>10</y>
-    <height>20</height>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+  <widget type="group" version="3.0.0">
+    <name>Control commands</name>
+    <x>12</x>
+    <y>100</y>
+    <width>298</width>
+    <height>95</height>
+    <style>1</style>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Start...</description>
+        </action>
+      </actions>
+      <pv_name>$(P)$(D)cStart</pv_name>
+      <x>27</x>
+      <y>22</y>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <show_confirm_dialog>true</show_confirm_dialog>
+      <confirm_message>Are your sure you want to start Sauer compressor?</confirm_message>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Stop...</description>
+        </action>
+      </actions>
+      <pv_name>$(P)$(D)cStop</pv_name>
+      <x>165</x>
+      <y>22</y>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <show_confirm_dialog>true</show_confirm_dialog>
+      <confirm_message>Are your sure you want to stop Sauer compressor?</confirm_message>
+    </widget>
   </widget>
 </display>
