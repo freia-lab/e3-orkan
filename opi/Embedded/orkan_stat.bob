@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-06-14 09:18:45 by konrad-->
+<!--Saved on 2024-06-17 21:58:49 by konrad-->
 <display version="2.0.0">
   <name>orkan_stat</name>
   <width>1200</width>
@@ -43,7 +43,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>235</y>
+    <y>300</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -54,7 +54,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>255</y>
+    <y>320</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -65,7 +65,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>275</y>
+    <y>340</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -76,7 +76,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>295</y>
+    <y>360</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -87,7 +87,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>315</y>
+    <y>380</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -98,7 +98,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>335</y>
+    <y>400</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -109,7 +109,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>355</y>
+    <y>420</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -120,7 +120,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>375</y>
+    <y>440</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -131,7 +131,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>12</x>
-    <y>395</y>
+    <y>460</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -310,7 +310,7 @@
   <widget type="group" version="3.0.0">
     <name>Control commands</name>
     <x>12</x>
-    <y>100</y>
+    <y>195</y>
     <width>298</width>
     <height>95</height>
     <style>1</style>
@@ -382,5 +382,74 @@
       <show_confirm_dialog>true</show_confirm_dialog>
       <confirm_message>Are your sure you want to stop Sauer compressor?</confirm_message>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Alarms:</text>
+    <x>12</x>
+    <y>90</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(P)$(D)sErrorsSum</pv_name>
+    <x>222</x>
+    <y>120</y>
+    <width>88</width>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="MAJOR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(P)$(D)sStatusSum</pv_name>
+    <x>222</x>
+    <y>150</y>
+    <width>88</width>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="MAJOR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>$(P)$(D)sAlarmsSum</pv_name>
+    <x>222</x>
+    <y>90</y>
+    <width>88</width>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="MAJOR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Errors:</text>
+    <x>12</x>
+    <y>120</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Status:</text>
+    <x>12</x>
+    <y>150</y>
   </widget>
 </display>
