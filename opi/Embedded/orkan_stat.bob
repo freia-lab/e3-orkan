@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-06-17 21:58:49 by konrad-->
+<!--Saved on 2024-06-18 16:51:06 by konrad-->
 <display version="2.0.0">
   <name>orkan_stat</name>
   <width>1200</width>
@@ -142,7 +142,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>235</y>
+    <y>360</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -153,7 +153,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>255</y>
+    <y>380</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -164,7 +164,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>275</y>
+    <y>400</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -175,7 +175,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>295</y>
+    <y>420</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -186,7 +186,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>315</y>
+    <y>440</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -197,7 +197,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>335</y>
+    <y>460</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -219,7 +219,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>150</y>
+    <y>275</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -303,7 +303,7 @@
     </macros>
     <file>analog-in.bob</file>
     <x>402</x>
-    <y>170</y>
+    <y>295</y>
     <width>390</width>
     <height>25</height>
   </widget>
@@ -451,5 +451,38 @@
     <text>Status:</text>
     <x>12</x>
     <y>150</y>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_18</name>
+    <macros>
+      <S>HardwareVer</S>
+    </macros>
+    <file>analog-in.bob</file>
+    <x>402</x>
+    <y>125</y>
+    <width>390</width>
+    <height>25</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_22</name>
+    <macros>
+      <S>SoftwareVer</S>
+    </macros>
+    <file>analog-in.bob</file>
+    <x>402</x>
+    <y>150</y>
+    <width>390</width>
+    <height>25</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_23</name>
+    <macros>
+      <S>SerNo</S>
+    </macros>
+    <file>analog-in.bob</file>
+    <x>402</x>
+    <y>175</y>
+    <width>390</width>
+    <height>25</height>
   </widget>
 </display>
