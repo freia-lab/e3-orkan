@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-20 14:26:07 by konrad-->
 <display version="2.0.0">
   <name>orkan_top</name>
-  <width>1250</width>
+  <width>1910</width>
   <height>980</height>
   <widget type="tabs" version="2.0.0">
     <name>Tabs</name>
@@ -22,6 +23,19 @@
             <file>Embedded/orkan_stat.bob</file>
             <y>3</y>
             <width>1200</width>
+            <height>800</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>P&amp;ID</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>Embedded/PID.bob</file>
+            <y>3</y>
+            <width>1230</width>
             <height>600</height>
             <resize>2</resize>
           </widget>
@@ -31,17 +45,16 @@
         <name>Debug</name>
         <children>
           <widget type="embedded" version="2.0.0">
-            <name>Embedded Display</name>
+            <name>Embedded Display_4</name>
             <file>Embedded/debug.bob</file>
             <y>3</y>
-            <width>1240</width>
-            <height>919</height>
-            <resize>2</resize>
+            <width>1200</width>
+            <height>800</height>
           </widget>
         </children>
       </tab>
     </tabs>
-    <width>1230</width>
+    <width>1900</width>
     <height>960</height>
   </widget>
 </display>

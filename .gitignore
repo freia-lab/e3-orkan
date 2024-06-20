@@ -9,7 +9,6 @@
 *.local
 core.*
 *-loc/*.Makefile
-orkan/*.Makefile
 cellMods/
 testMods*/
 *PVs.list

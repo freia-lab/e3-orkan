@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-06-18 16:51:06 by konrad-->
+<!--Saved on 2024-06-20 16:02:45 by konrad-->
 <display version="2.0.0">
   <name>orkan_stat</name>
   <width>1200</width>
+  <height>800</height>
   <widget type="label" version="2.0.0">
     <name>Label_7</name>
     <text>Current Status</text>
@@ -484,5 +485,1247 @@
     <y>175</y>
     <width>390</width>
     <height>25</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>15 14 13 12 11 10 9  8  7  6  5  4  3  2  1  0</text>
+    <x>825</x>
+    <y>30</y>
+    <width>350</width>
+    <font>
+      <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord</name>
+    <macros>
+      <ADR>00</ADR>
+      <S>Alarms-0</S>
+    </macros>
+    <x>790</x>
+    <y>50</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_1</name>
+    <macros>
+      <ADR>01</ADR>
+      <S>Alarms-1</S>
+    </macros>
+    <x>790</x>
+    <y>71</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_1</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_2</name>
+    <macros>
+      <ADR>02</ADR>
+      <S>Alarms-2</S>
+    </macros>
+    <x>790</x>
+    <y>92</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_2</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_3</name>
+    <macros>
+      <ADR>03</ADR>
+      <S>Alarms-3</S>
+    </macros>
+    <x>790</x>
+    <y>113</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_3</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_4</name>
+    <macros>
+      <ADR>04</ADR>
+      <S>Alarms-4</S>
+    </macros>
+    <x>790</x>
+    <y>134</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_4</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_5</name>
+    <macros>
+      <ADR>05</ADR>
+      <S>Alarms-5</S>
+    </macros>
+    <x>790</x>
+    <y>155</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_5</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_6</name>
+    <macros>
+      <ADR>06</ADR>
+      <S>Alarms-6</S>
+    </macros>
+    <x>790</x>
+    <y>176</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_6</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_7</name>
+    <macros>
+      <ADR>07</ADR>
+      <S>Alarms-7</S>
+    </macros>
+    <x>790</x>
+    <y>197</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_7</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_8</name>
+    <macros>
+      <ADR>08</ADR>
+      <S>Alarms-8</S>
+    </macros>
+    <x>790</x>
+    <y>218</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_8</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_9</name>
+    <macros>
+      <ADR>09</ADR>
+      <S>Alarms-9</S>
+    </macros>
+    <x>790</x>
+    <y>239</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_9</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_10</name>
+    <macros>
+      <ADR>0A</ADR>
+      <S>Alarms-10</S>
+    </macros>
+    <x>790</x>
+    <y>260</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_10</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text>15 14 13 12 11 10 9  8  7  6  5  4  3  2  1  0</text>
+    <x>825</x>
+    <y>302</y>
+    <width>350</width>
+    <font>
+      <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_12</name>
+    <macros>
+      <ADR>14</ADR>
+      <S>Errors-0</S>
+    </macros>
+    <x>790</x>
+    <y>322</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_12</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_13</name>
+    <macros>
+      <ADR>15</ADR>
+      <S>Errors-1</S>
+    </macros>
+    <x>790</x>
+    <y>343</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_13</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_14</name>
+    <macros>
+      <ADR>16</ADR>
+      <S>Errors-2</S>
+    </macros>
+    <x>790</x>
+    <y>364</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_14</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_15</name>
+    <macros>
+      <ADR>17</ADR>
+      <S>Errors-3</S>
+    </macros>
+    <x>790</x>
+    <y>385</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_15</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_16</name>
+    <macros>
+      <ADR>18</ADR>
+      <S>Errors-4</S>
+    </macros>
+    <x>790</x>
+    <y>406</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_16</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_17</name>
+    <macros>
+      <ADR>19</ADR>
+      <S>Errors-5</S>
+    </macros>
+    <x>790</x>
+    <y>427</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_27</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_17</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_18</name>
+    <macros>
+      <ADR>1A</ADR>
+      <S>Errors-6</S>
+    </macros>
+    <x>790</x>
+    <y>448</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_18</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_19</name>
+    <macros>
+      <ADR>1B</ADR>
+      <S>Errors-7</S>
+    </macros>
+    <x>790</x>
+    <y>469</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_19</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_20</name>
+    <macros>
+      <ADR>1C</ADR>
+      <S>Errors-8</S>
+    </macros>
+    <x>790</x>
+    <y>490</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_20</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_21</name>
+    <macros>
+      <ADR>1D</ADR>
+      <S>Errors-9</S>
+    </macros>
+    <x>790</x>
+    <y>511</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_21</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_34</name>
+    <text>15 14 13 12 11 10 9  8  7  6  5  4  3  2  1  0</text>
+    <x>825</x>
+    <y>552</y>
+    <width>350</width>
+    <font>
+      <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_24</name>
+    <macros>
+      <ADR>28</ADR>
+      <S>Status-0</S>
+    </macros>
+    <x>790</x>
+    <y>572</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_24</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_25</name>
+    <macros>
+      <ADR>29</ADR>
+      <S>Status-1</S>
+    </macros>
+    <x>790</x>
+    <y>593</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_25</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_26</name>
+    <macros>
+      <ADR>2A</ADR>
+      <S>Status-2</S>
+    </macros>
+    <x>790</x>
+    <y>614</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_26</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_27</name>
+    <macros>
+      <ADR>2B</ADR>
+      <S>Status-3</S>
+    </macros>
+    <x>790</x>
+    <y>635</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_27</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_28</name>
+    <macros>
+      <ADR>2C</ADR>
+      <S>Status-4</S>
+    </macros>
+    <x>790</x>
+    <y>656</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_28</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_29</name>
+    <macros>
+      <ADR>2D</ADR>
+      <S>Status-5</S>
+    </macros>
+    <x>790</x>
+    <y>677</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_29</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_30</name>
+    <macros>
+      <ADR>2E</ADR>
+      <S>Status-6</S>
+    </macros>
+    <x>790</x>
+    <y>698</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_41</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_30</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>StatWord_31</name>
+    <macros>
+      <ADR>2F</ADR>
+      <S>Status-7</S>
+    </macros>
+    <x>790</x>
+    <y>719</y>
+    <width>375</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_42</name>
+      <text>0x$(ADR)</text>
+      <y>1</y>
+      <width>34</width>
+      <font>
+        <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_31</name>
+      <pv_name>$(P)$(D)$(S)</pv_name>
+      <x>35</x>
+      <width>340</width>
+      <height>21</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_20</name>
+    <text>Alarms</text>
+    <x>825</x>
+    <y>10</y>
+    <width>340</width>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>Errors</text>
+    <x>825</x>
+    <y>281</y>
+    <width>340</width>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_33</name>
+    <text>Status</text>
+    <x>825</x>
+    <y>532</y>
+    <width>340</width>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_webpage">
+        <url>https://freia.physics.uu.se/CSS/pdf/Cryo/Modbus_RTU_2403.pdf</url>
+        <description>Modbus register documentation</description>
+      </action>
+    </actions>
+    <x>792</x>
+    <y>750</y>
+    <width>250</width>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
