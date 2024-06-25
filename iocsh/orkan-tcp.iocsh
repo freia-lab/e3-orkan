@@ -36,7 +36,7 @@ drvAsynIPPortConfigure("$(ASYN_PORT_NAME)","$(IP_ADDR):$(IP_PORT=502)",0,0,1)
 #                      timeoutMsec,
 #                      writeDelayMsec)
 
-modbusInterposeConfig("$(ASYN_PORT_NAME)",0,500,10)
+modbusInterposeConfig("$(ASYN_PORT_NAME)",0,1500,10)
 
 #drvModbusAsynConfigure	 'Port name'
 #			 'Octet port name' 
@@ -56,15 +56,10 @@ drvModbusAsynConfigure(RD_2000, "$(ASYN_PORT_NAME)", 2, 3, 0x2000, 34, "UINT16",
 drvModbusAsynConfigure(RD_3000, "$(ASYN_PORT_NAME)", 2, 3, 0x3000, 39, "UINT16", 4000, "orkan")
 drvModbusAsynConfigure(RD_4000, "$(ASYN_PORT_NAME)", 2, 3, 0x4000, 13, "UINT16", 4000, "orkan")
 
-var(reccastTimeout, 5.0)
-var(reccastMaxHoldoff, 5.0)
-
 #Load your database defining the EPICS records
 dbLoadRecords("orkan.db","PORT_RD_1000=RD_1000,PORT_RD_2000=RD_2000,PORT_RD_3000=RD_3000,PORT_RD_4000=RD_4000,PORT_RD_STAT_BITS=RD_STAT_BITS,PORT_RD_1R=RD_1R,PORT_WR_1R=WR_1R,P=$(PREFIX),D=$(DEV_NAME)")
 
 dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT='$(ASYN_PORT_NAME)',ADDR='0',IMAX='1024',OMAX='256'")
-dbLoadRecords("reccaster.db","P=$(IOCNAME):RecSync-")
-dbLoadRecords("db/iocAdminSoft-ess.db","IOC=$(IOCNAME)")
 
 #################################################
 

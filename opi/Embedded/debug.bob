@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-06-14 09:12:58 by konrad-->
+<!--Saved on 2024-06-25 10:38:42 by konrad-->
 <display version="2.0.0">
   <name>Debug</name>
   <macros>
@@ -10,7 +10,7 @@
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
     <macros>
-      <IOC>ioc01-orkan</IOC>
+      <IOC>ioc23-orkan</IOC>
     </macros>
     <file>../../freia-symbols/display-builder/RecSync/recsync-status.bob</file>
     <x>500</x>
@@ -21,7 +21,7 @@
   <widget type="group" version="3.0.0">
     <name>Asyn Record</name>
     <macros>
-      <P>ioc01-orkan:</P>
+      <P>ioc23-orkan:</P>
     </macros>
     <x>20</x>
     <y>40</y>

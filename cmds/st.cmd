@@ -1,6 +1,9 @@
 # This should be a test or example startup script
 
 require orkan
+require recsync
+require iocstats
+
 
 epicsEnvSet ("IOCNAME", "ioc23-orkan")
 
@@ -10,3 +13,11 @@ epicsEnvSet ("IOCNAME", "ioc23-orkan")
 # Connect using Modbus TCP
 iocshLoad ("$(orkan_DIR)orkan-tcp.iocsh", "ASYN_PORT_NAME=PORT1,IP_ADDR=192.168.10.39,PREFIX=Cryo-Rec:LP:,DEV_NAME=C4:,TOP=/opt/epics/autosave")
 
+var(reccastTimeout, 5.0)
+var(reccastMaxHoldoff, 5.0)
+
+# iocStats database
+dbLoadRecords("$(iocstats_DB)/iocAdminSoft-ess.db","IOC=$(IOCNAME)")
+
+# Start recsync client
+iocshLoad("$(recsync_DIR)/recsync.iocsh", "IOCNAME=$(IOCNAME)")
