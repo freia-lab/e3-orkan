@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-06-20 14:26:07 by konrad-->
+<!--Saved on 2025-10-10 16:03:32 by konrad-->
 <display version="2.0.0">
   <name>orkan_top</name>
   <width>1910</width>
@@ -22,21 +22,38 @@
             </macros>
             <file>Embedded/orkan_stat.bob</file>
             <y>3</y>
-            <width>1200</width>
+            <width>1800</width>
             <height>800</height>
             <resize>2</resize>
           </widget>
         </children>
       </tab>
       <tab>
-        <name>P&amp;ID</name>
+        <name>Orkan P&amp;ID</name>
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display</name>
             <file>Embedded/PID.bob</file>
             <y>3</y>
-            <width>1230</width>
-            <height>600</height>
+            <width>1800</width>
+            <height>900</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Sauer-Hurricane</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_5</name>
+            <macros>
+              <D>C1:</D>
+              <P>Cryo-Rec:LP:</P>
+            </macros>
+            <file>Embedded/orkan_stat.bob</file>
+            <y>3</y>
+            <width>1800</width>
+            <height>800</height>
             <resize>2</resize>
           </widget>
         </children>

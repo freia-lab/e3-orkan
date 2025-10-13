@@ -1,0 +1,56 @@
+#- ###         MODBUS   orkan   iocsh               ###
+#- ####################################################
+#- >> Mandatory
+#- ASYN_PORT_NAME - MODBUS ASYN <name>
+#- IP_ADDR	  - ethernet address
+#- PREFIX	  - PV PREFIX
+#- DEV_NAME	  - Device name
+#-
+#- >> Optional
+#- IP_PORT	  - IP port number, default 502
+
+#-https://epics-modules.github.io/master/asyn/R4-42/asynDriver.html
+#-Specify the TCP endpoint and give your 'bus' an arbitrary name eg. "asynstream1".
+#-drvAsynIPPortConfigure 'port name' 'host:port [protocol]' priority 'disable auto-connect' noProcessEos
+#-drvAsynSerialPortConfigure("portName",
+#-		             "ttyName",
+#-			     priority,
+#-			     noAutoConnect,
+#-        		     noProcessEosIn)
+#-asynSetOption("portName", addr,
+#-		"key", "value")
+
+drvAsynIPPortConfigure("$(ASYN_PORT_NAME)","$(IP_ADDR):$(IP_PORT=502)",0,0,1)
+# Set-up the ETH TO RS485 server setting (via web interface to $(IP_ADDR)) as below or whatever is set in the Sauer PLC
+#asynSetOption("$(ASYN_PORT_NAME)",0,"baud", $(BAUD=9600))
+#asynSetOption("$(ASYN_PORT_NAME)",0,"bits", "8")
+#asynSetOption("$(ASYN_PORT_NAME)",0,"parity", "none")
+#asynSetOption("$(ASYN_PORT_NAME)",0,"stop", "1")
+		
+#modbusInterposeConfig(portName, 
+#                      linkType,
+#                      timeoutMsec,
+#                      writeDelayMsec)
+
+modbusInterposeConfig("$(ASYN_PORT_NAME)",0,1500,10)
+
+#drvModbusAsynConfigure	 'Port name'
+#			 'Octet port name' 
+#			 'Modbus slave address' 
+#			 'Modbus function code' 
+#			 'Modbus start address' 
+#			 'Modbus length' 
+#			 'Data type' 
+#			 'Poll time (msec)' 
+#			 'PLC type'
+
+drvModbusAsynConfigure($(DEV_NAME)WR_1R, "$(ASYN_PORT_NAME)", 2, 6, -1, 1, "UINT16", 0, "orkan")
+
+drvModbusAsynConfigure($(DEV_NAME)RD_STAT_BITS, "$(ASYN_PORT_NAME)", 2, 3, 0x0000, 0x30, "UINT16", 2000, "orkan")
+drvModbusAsynConfigure($(DEV_NAME)RD_1000, "$(ASYN_PORT_NAME)", 2, 3, 0x1000, 22, "UINT16", 2000, "orkan")
+drvModbusAsynConfigure($(DEV_NAME)RD_2000, "$(ASYN_PORT_NAME)", 2, 3, 0x2000, 34, "UINT16", 4000, "orkan")
+drvModbusAsynConfigure($(DEV_NAME)RD_3000, "$(ASYN_PORT_NAME)", 2, 3, 0x3000, 39, "UINT16", 4000, "orkan")
+drvModbusAsynConfigure($(DEV_NAME)RD_4000, "$(ASYN_PORT_NAME)", 2, 3, 0x4000, 13, "UINT16", 4000, "orkan")
+
+#Load your database defining the EPICS records
+dbLoadRecords("orkan.db","PORT_RD_1000=$(DEV_NAME)RD_1000,PORT_RD_2000=$(DEV_NAME)RD_2000,PORT_RD_3000=$(DEV_NAME)RD_3000,PORT_RD_4000=$(DEV_NAME)RD_4000,PORT_RD_STAT_BITS=$(DEV_NAME)RD_STAT_BITS,PORT_RD_1R=$(DEV_NAME)RD_1R,PORT_WR_1R=$(DEV_NAME)WR_1R,P=$(PREFIX),D=$(DEV_NAME)")
