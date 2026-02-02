@@ -16,6 +16,7 @@
 #- IP_PORT	  - IP port number, default 502
 
 epicsEnvSet("IOCDIR", "orkan")
+addScan(60)
 
 iocshLoad("$(orkan_DIR)compressor-tcp.iocsh", "ASYN_PORT_NAME=$(ASYN_PORT_NAME1),IP_ADDR=$(IP_ADDR1),PREFIX=$(PREFIX1),DEV_NAME=$(DEV_NAME1)")
 iocshLoad("$(orkan_DIR)compressor-tcp.iocsh", "ASYN_PORT_NAME=$(ASYN_PORT_NAME2),IP_ADDR=$(IP_ADDR2),PREFIX=$(PREFIX2),DEV_NAME=$(DEV_NAME2)")
